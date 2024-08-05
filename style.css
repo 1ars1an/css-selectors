@@ -80,12 +80,19 @@ a {
     border: none;
 }
 
+p {
+    display: block;
+    padding: 5px;
+}
+
 a:link {
-    color: #181A27;
+    color: rgb(173, 255, 47);
+    font-weight: 700;
 }
 
 a:visited {
-    color: #181A27;
+    color: rgb(173, 255, 47);
+    font-weight: 700;
 }
 
 .container {
@@ -104,13 +111,9 @@ div {
     flex: 2;
 }
 
-.output * {
-    border: 1px solid red;
-}
-
 .input, .output {
     padding: 10px;
-    background-color: #141414;
+    background-color: #222222;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -120,19 +123,51 @@ div {
 
 .iheading {
     margin-bottom: 25px;
-    color: #ECF0B8;
+    color: rgb(173, 255, 47);
     width: 16rem;
     font-size: 1.4rem;
     font-weight: 700;
 }
 
 .btn {
-    padding: 5px;
+    padding: 5px 0;
     border-radius: 8px;
     width: 16rem;
-    background-color: #e78e70;
-    color: #181A27;
+    background-color: #000000;
+    color: rgb(173, 255, 47);
+    font-weight: 700;
+    border: 2px solid rgb(173, 255, 47);
+    box-shadow: 0px 2px 6px -2px rgb(173, 255, 47);
+}
+
+.parent {
+    border: 1px solid rgb(173, 255, 47);
+    width: 48rem;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(250, 250, 250);
+    color: #000000;
     font-weight: 500;
-    border: 2px solid #F7A3B9;
+    border: 2px solid rgb(173, 255, 47);
     box-shadow: 0px 4px 6px -2px #F7A3B9;
+}
+
+.default.child:first-child {
+    margin-top: 15px;
+}
+
+.child {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #000000;
+    color: rgb(173, 255, 47);
+    font-weight: 700;
+    border: 1px solid rgb(173, 255, 47);
+    box-shadow: 0px 4px 6px -2px #222222;
+}
+
+.btn-block {
+    display: block;
+    padding: 5px;
+    width: 100%;
 }
