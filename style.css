@@ -72,35 +72,16 @@ h1, h2, h3, h4, h5 {
 * {
     text-align: center;
     font-family: 'Plus Jakarta Sans';
+    letter-spacing: 0.1rem;
   }
-
-a {
-    text-decoration: none;
-    display: block;
-    border: none;
-}
 
 p {
     display: block;
     padding: 5px;
 }
 
-a:link {
-    color: rgb(173, 255, 47);
-    font-weight: 700;
-}
-
-a:visited {
-    color: rgb(173, 255, 47);
-    font-weight: 700;
-}
-
 .container {
     display: flex;
-}
-
-div {
-    padding: 5px;
 }
 
 .input {
@@ -121,7 +102,7 @@ div {
     align-items: center;
 }
 
-.iheading {
+.heading {
     margin-bottom: 25px;
     color: rgb(173, 255, 47);
     width: 16rem;
@@ -138,30 +119,51 @@ div {
     font-weight: 700;
     border: 2px solid rgb(173, 255, 47);
     box-shadow: 0px 2px 6px -2px rgb(173, 255, 47);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+a:link {
+    color: rgb(173, 255, 47);
+    font-weight: 700;
+}
+
+a:visited {
+    color: rgb(173, 255, 47);
+    font-weight: 700;
 }
 
 .parent {
-    border: 1px solid rgb(173, 255, 47);
     width: 48rem;
     padding: 15px;
     margin-bottom: 10px;
-    background-color: rgb(250, 250, 250);
-    color: #000000;
     font-weight: 500;
+}
+
+.pdefault {
+    color: #000000;
+    background-color: rgb(250, 250, 250);
     border: 2px solid rgb(173, 255, 47);
     box-shadow: 0px 4px 6px -2px #F7A3B9;
 }
 
-.default.child:first-child {
+.cdefault.child:nth-child(2) {
     margin-top: 15px;
 }
 
 .child {
     margin-bottom: 5px;
     padding: 5px;
-    background-color: #000000;
-    color: rgb(173, 255, 47);
     font-weight: 700;
+}
+
+.cdefault {
+    color: rgb(173, 255, 47);
+    background-color: #000000;
     border: 1px solid rgb(173, 255, 47);
     box-shadow: 0px 4px 6px -2px #222222;
 }
@@ -170,4 +172,22 @@ div {
     display: block;
     padding: 5px;
     width: 100%;
+}
+
+.select-parent {
+    color: #000000;
+    background-color: #ffdbf3;
+    border: 1px solid #ff0000;
+    box-shadow: 0px 4px 6px -2px #222222;
+}
+
+.select-child {
+    color: rgb(255, 121, 198);
+    background-color: #282a36;
+    border: 1px solid rgb(255, 121, 198);
+    box-shadow: 0px 4px 6px -2px #222222;
+}
+
+.first::first-line {
+    color: red;
 }
