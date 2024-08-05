@@ -1,0 +1,138 @@
+/* Matt Reset: https://mattbrictson.com/blog/css-normalize-and-reset */
+/* Includes modern.css however have removed for now*/
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Josh Reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* My CSS */
+
+  .plus-jakarta-sans-main {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+* {
+    text-align: center;
+    font-family: 'Plus Jakarta Sans';
+  }
+
+a {
+    text-decoration: none;
+    display: block;
+    border: none;
+}
+
+a:link {
+    color: #181A27;
+}
+
+a:visited {
+    color: #181A27;
+}
+
+.container {
+    display: flex;
+}
+
+div {
+    padding: 5px;
+}
+
+.input {
+    flex: 1;
+}
+
+.output {
+    flex: 2;
+}
+
+.output * {
+    border: 1px solid red;
+}
+
+.input, .output {
+    padding: 10px;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.iheading {
+    margin-bottom: 25px;
+    color: #ECF0B8;
+    width: 16rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 8px;
+    width: 16rem;
+    background-color: #e78e70;
+    color: #181A27;
+    font-weight: 500;
+    border: 2px solid #F7A3B9;
+    box-shadow: 0px 4px 6px -2px #F7A3B9;
+}
